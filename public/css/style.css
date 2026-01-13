@@ -1,0 +1,423 @@
+/* ===== RESET ===== */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #2d3436;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #0a3d62;
+  color: #fff;
+  padding: 10px 0; /* lebih kecil */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header .container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 500;
+  transition: .25s;
+}
+
+nav a:hover {
+  color: #00a8ff;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 35px auto;
+}
+
+/* ===== PRODUCT LIST CARD ===== */
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.product-card {
+  display: flex;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  transition: .25s;
+  border-left: 5px solid #0a3d62;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.product-image {
+  flex: 0 0 180px;
+  height: 180px;
+  background: #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+  padding: 24px;
+}
+
+.product-info h3 {
+  font-size: 20px;
+  color: #0a3d62;
+  margin-bottom: 6px;
+}
+
+.product-info p {
+  margin: 4px 0;
+  color: #535c68;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0097e6;
+  margin-top: 8px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-block;
+  background: #0a3d62;
+  color: #fff !important;
+  padding: 9px 16px;
+  border-radius: 8px;
+  margin-top: 14px;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.btn:hover {
+  background: #074279;
+  transform: translateY(-2px);
+}
+
+/* ===== CART / CHECKOUT TABLE ===== */
+.table-box {
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  overflow-x: auto;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* HAPUS fixed layout agar kolom tidak memaksa ukuran */
+  table-layout: auto;
+}
+
+.cart-table th {
+  background: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 14px 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cart-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.btn-delete {
+  background: #c23616;
+}
+
+.btn-delete:hover {
+  background: #e84118;
+}
+
+/* ===== FORM ===== */
+.form-box {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  max-width: 600px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+  margin-top: 60px;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.qty-box input {
+  width: 55px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.qty-btn {
+  background: #0a3d62;
+  color: #fff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.qty-btn:hover {
+  background: #074279;
+  transform: translateY(-2px);
+}
+
+.btn-outline-danger {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1px solid #c23616;
+  border-radius: 6px;
+  color: #c23616;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .25s;
+  white-space: nowrap;
+  margin-right: 4px;
+}
+
+.btn-outline-danger:hover {
+  background: #c23616;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.cart-table td:nth-child(2),
+.cart-table td:nth-child(4),
+.cart-table th:nth-child(2),
+.cart-table th:nth-child(4) {
+  text-align: right;
+  padding-right: 18px;
+}
+
+
+/* Header Flex Layout */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* mencegah tabrakan */
+}
+
+/* Biar footer tetap di bawah */
+body, html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  width: 90%;
+  max-width: 1100px;
+  margin: 35px auto;
+}
+
+/* ===== OVERRIDES: samakan lebar box, tabel, dan area konten ===== */
+
+/* Lebarkan area konten dan header agar konsisten */
+header .container,
+.page-content,
+.container {
+  width: 95%;
+  max-width: 1200px;   /* boleh ubah ke 1280px kalau mau lebih lebar */
+  margin: 35px auto;
+}
+
+/* Pastikan box putih mengikuti penuh lebar area konten */
+
+
+/* Kolom harga/total rapi satu baris & rata kanan */
+.cart-table td,
+.cart-table th {
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 14px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table td:nth-child(2),
+.cart-table td:nth-child(4),
+.cart-table th:nth-child(2),
+.cart-table th:nth-child(4) {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cart-table td:nth-child(3),
+.cart-table th:nth-child(3) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Jaga footer tetap di bawah */
+html, body { height: 100%; display: flex; flex-direction: column; }
+.page-content { flex: 1; }
+
+.page-content,
+.container,
+header .container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 35px auto;
+  padding: 0;
+}
+
+.cart-table td:first-child {
+  white-space: normal;
+  width: 45%;     /* Berikan ruang besar untuk nama produk */
+  word-break: break-word;
+}
+
+/* Rata kanan kolom Aksi */
+.cart-table td:last-child,
+.cart-table th:last-child {
+  text-align: right;
+  padding-right: 6px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+nav a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.info-box {
+  background:#f0f4f8;
+  padding:16px 20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.price-highlight {
+  color:#0097e6;
+  font-weight:700;
+}
+
+.pay-box {
+  background:#fff;
+  border:1px solid #dcdde1;
+  border-radius:10px;
+  padding:18px;
+  margin-top:10px;
+}
+
+.pay-box ul {
+  margin-left:18px;
+  color:#636e72;
+}
+
+.qris-modal {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(4px);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.qris-content {
+  background:#fff;
+  padding:28px;
+  border-radius:14px;
+  text-align:center;
+  width:320px;
+  animation:fadeIn .2s ease;
+}
+
+.qris-content img {
+  width:100%;
+  border-radius:10px;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:scale(.95);}
+  to {opacity:1; transform:scale(1);}
+}
+
+.btn-center {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}

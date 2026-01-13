@@ -1,0 +1,6 @@
+http://localhost/toko_online/public/
+
+http://localhost/toko_online/admin/login.php
+
+admin
+admin123
